@@ -1,23 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@font-face {
+    font-family: milkycoffee;
+    src: url("./fonts/Lovera.otf");
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
 /*FOR NAV*/
 
 .nav-logo {
-    font-weight: 300;
+    font-weight: 400;
+    font-family: 'milkycoffee', cursive;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
 }
 
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 20px;
+    padding: 0px 20px;
+    position: sticky;
+    height: 70px;
+    top: 0;
+    background-color: #FFFDDE;
+    z-index: 999;
+}
+
+.nav-item {
+    font-weight: 300;
 }
 
 .nav-menu {
@@ -27,7 +46,8 @@
 
 .nav-item:hover {
     background-color: #FEFBE7;
-    border-bottom: 4px solid pink;
+    font-weight: 400;
+    border-bottom: 4px solid black;
 }
 
 ul {
@@ -61,9 +81,14 @@ ul li a {
     align-items: center;
 }
 
+.magnify {
+    cursor: pointer;
+}
+
 .cart {
     font-size: 1.3rem;
     padding: 20px;
+    cursor: pointer;
 }
 
 
@@ -73,7 +98,14 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 150px 0px;
+    height: 100vh;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: -48px;
+    font-size: 1.5rem;
+    color: black;
 }
 
 .h1 {
@@ -87,62 +119,159 @@ ul li a {
 
 /*FOR FLOWER SELECTION*/
 
+.active {
+    border-bottom: 4px solid black;
+}
+
 .flower-selection {
-    height: 150vh;
-    background-color: #FFF5E4;
+    height: 170vh;
+    background-color: #F7ECDE;
 }
 
 .flower-types {
     display: flex;
     font-size: 1.2rem;
-    padding: 25px;
+    background-color: #FFCACA;
+    position: sticky;
+    top: 50px;
+    align-items: center;
+    height: 100px;
+    box-shadow: 2px 2px 10px gray;
+    z-index: 0;
+}
+
+.flower-type {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.flower-types li p {
+    padding: 30px 20px;
 }
 
 .flower-type:hover {
     background-color: white;
-    border-bottom: 4px solid black;
+    font-weight: 600;
 }
 
 .flower-gallery {
-    margin: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .flower-img {
     margin: 5px;
-    float: left;
-    width: 280px;
+    width: 19%;
+    background-color: #FFE3E1;
 }
 
 .flower-img:hover {
-    box-shadow: 2px 2px gray;
+    box-shadow: 5px 5px 10px pink;
 }
 
 .flower-img img {
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 .desc {
     padding: 15px;
+    text-align: left;
+}
+
+.bouquet {
+    color: #41444B;
+}
+
+.description {
+    color: #52575D;
+}
+
+.status {
+    color: #DD5353;
+    padding: 20px 0;
+}
+
+.add {
+    border: 1px solid #FF99D7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #FFE3E1;
+}
+
+.add:hover {
+    background-color: #FF99D7;
+    border: none;
+}
+
+
+/*BLOG*/
+
+.blog {
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    background-color: #D0B8A8;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.blog-text {
     text-align: center;
+    font-size: 5rem;
+    font-family: 'Indie Flower', cursive;
+    background-color: white;
+    margin: 30px;
+    width: 90%;
+}
+
+.apos {
+    font-size: 15rem;
 }
 
 
 /*FOOTER*/
 
-.footer {
+.contacts {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
+    background-color: #FFFDDE;
 }
 
 .icon {
     font-size: 2rem;
     padding: 20px;
+    color: #52575D;
 }
 
 .icon:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+}
+
+.fb {
+    color: #1572A1;
+}
+
+.ig {
+    color: #D35D6E;
+}
+
+.mail {
+    color: black;
+}
+
+.mail:hover {
+    color: #52575D;
+}
+
+.credit-to {
+    margin: 10px 20px;
 }
