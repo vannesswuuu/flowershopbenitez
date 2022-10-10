@@ -15,119 +15,187 @@
     <div class="nav">
 
         <div class="sub-nav title">
-            <h1 class="nav-logo">Benitez Flowers</h1>
+            <h1 class="nav-logo">benitez's flowers</h1>
+
         </div>
 
         <div class="sub-nav">
             <ul class="nav-menu">
                 <li>
-                    <a href="" class="home nav-item">Home</a>
+                    <a href="#home" class="home nav-item">Home</a>
                 </li>
                 <li>
-                    <a href="" class="home nav-item">Shop</a>
+                    <a href="#flower-select" class="home nav-item">Shop</a>
                 </li>
                 <li>
-                    <a href="" class="home nav-item">Blog</a>
+                    <a href="#blog" class="home nav-item">Blog</a>
                 </li>
                 <li>
-                    <a href="" class="home nav-item">Contact us</a>
+                    <a href="#contact-us" class="home nav-item">Contact us</a>
                 </li>
             </ul>
         </div>
 
         <div class="sub-nav search">
             <label for="search">
-                <i class="fa-solid fa-magnifying-glass flower"></i>
-            </label>
-            <input type="text" placeholder=" search flowers" id="search" class="box">
+                <i class="fa-solid magnify fa-magnifying-glass flower"></i>
+            </label> &nbsp;
+            <input type="text" placeholder="   . . .  search flowers . . ." id="search" class="box">
             <i class="fa-solid cart fa-cart-shopping"></i>
         </div>
     </div>
     <!--FOR HOME PAGE-->
-    <div class="home-page">
+    <div class="home-page" id="home">
         <div class="text-display">
             <h2 class="h1">Send flowers<br>like you really mean it.</h2>
             <p class="p">We offer flowers that really meets your needs. We guarantee <br> quality and authentic flowers and products</p>
         </div>
         <img src="./img/flower.jpg" width="260px" height="290px" alt="">
+        <a href="#flower-select" id="arrow" class="arrow-down"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
     </div>
 
     <!--FOR FLOWER SELECTION-->
-    <div class="flower-selection">
-        <ul class="flower-types">
-            <li>
-                <a href="" class="flower-type">ALL</a>
-            </li>
-            <li>
-                <a href="" class="flower-type">POPULAR</a>
-            </li>
-            <li>
-                <a href="" class="flower-type">VARIOUS</a>
-            </li>
-            <li>
-                <a href="" class="flower-type">EXOTIC</a>
-            </li>
-            <li>
-                <a href="" class="flower-type">GREENS</a>
-            </li>
-            <li>
-                <a href="" class="flower-type">CACTUSES</a>
-            </li>
-        </ul>
+    <ul class="flower-types">
+        <li>
+            <p href="" class="flower-type active">ALL</p>
+        </li>
+        <li>
+            <p href="" class="flower-type">POPULAR</p>
+        </li>
+        <li>
+            <p href="" class="flower-type">VARIOUS</p>
+        </li>
+        <li>
+            <p href="" class="flower-type">EXOTIC</p>
+        </li>
+        <li>
+            <p href="" class="flower-type">GREENS</p>
+        </li>
+        <li>
+            <p href="" class="flower-type">CACTUSES</p>
+        </li>
+    </ul>
+    <div class="flower-selection" id="flower-select">
+
         <!--FOR FLOWER GALLERY-->
         <div class="flower-gallery">
+
             <div class="flower-img">
                 <a target="" href="./img/flow1.jpg">
                     <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
                 </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
+                <div class="desc">
+                    <h3 class="bouquet">Pink Bouquet</h3>
+                    <p class="description">This flower is rare.</p>
+                    <p class="status">SOLD OUT</p>
+                </div>
             </div>
+
+            <div class="flower-img">
+                <a target="" href="./img/flow2.jpg">
+                    <img src="./img/flow2.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h3 class="bouquet">Red Bouquet</h3>
+                    <p class="description">This flower is rare.</p>
+                    <p class="status">SOLD OUT</p>
+                </div>
+            </div>
+
+            <div class="flower-img">
+                <a target="" href="./img/flow3jpg">
+                    <img src="./img/flow3.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h3 class="bouquet"> Rose Pink Bouquet</h3>
+                    <p class="description">Commonly found in humid places.</p>
+                    <p class="add">
+                        Add to cart
+                    </p>
+                </div>
+            </div>
+
+            <div class="flower-img">
+                <a target="" href="./img/flow4.jpg">
+                    <img src="./img/flow4.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h3 class="bouquet"> Blood Red Bouquet</h3>
+                    <p class="description">Commonly found in humid places.</p>
+                    <p class="status">SOLD OUT</p>
+                </div>
+            </div>
+
+            <div class="flower-img">
+                <a target="" href="./img/flow5.jpg">
+                    <img src="./img/flow5.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h3 class="bouquet"> Wedding Bouquet</h3>
+                    <p class="description">Commonly found in humid places.</p>
+                    <p class="add">
+                        Add to cart
+                    </p>
+                </div>
+            </div>
+
+            <div class="flower-img">
+                <a target="" href="./img/flow6.jpg">
+                    <img src="./img/flow6.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h3 class="bouquet">Sunflower Bouquet</h3>
+                    <p class="description">This flower is rare.</p>
+                    <p class="add">
+                        Add to cart
+                    </p>
+                </div>
+            </div>
+
             <div class="flower-img">
                 <a target="" href="./img/flow1.jpg">
                     <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
                 </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
+                <div class="desc">
+                    <h3 class="bouquet">Greeny Bouquet</h3>
+                    <p class="description">This flower is rare.</p>
+                    <p class="status">SOLD OUT</p>
+                </div>
             </div>
-            <div class="flower-img">
-                <a target="" href="./img/flow1.jpg">
-                    <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
-            </div>
-            <div class="flower-img">
-                <a target="" href="./img/flow1.jpg">
-                    <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
-            </div>
-            <div class="flower-img">
-                <a target="" href="./img/flow1.jpg">
-                    <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
-            </div>
-            <div class="flower-img">
-                <a target="" href="./img/flow1.jpg">
-                    <img src="./img/flow1.jpg" alt="Cinque Terre" width="600" height="400">
-                </a>
-                <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quam?</div>
-            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="blog" id="blog">
+        <p class="blog-text">
+            <span class="apos">,,
+                </span>
+            <br>SEND FLOWERS TO ANYONE
+        </p>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="contacts" id="contact-us">
+            <a target="_blank" href="https://www.facebook.com/vanness.benitez.35">
+                <p class="item"><i class="fa-brands fb icon fa-facebook"></i></p>
+            </a>
+            <a target="_blank" href=" https://www.instagram.com/vannesswuuuu_/ ">
+                <p class="item "><i class="fa-brands ig icon fa-instagram "></i></p>
+            </a>
+            <a href=" ">
+                <p class="item "><i class="fa-regular mail icon fa-envelope "></i></p>
+            </a>
+        </div>
+        <div class="credits">
+            <p class="credit-to">
+                C: BENITEZ, VANNESS A. BSIT 1C
+            </p>
         </div>
 
-
-
     </div>
-    </div>
-
-
-
-    <div class="footer">
-        <p class="item"><i class="fa-brands icon fa-facebook"></i></p>
-        <p class="item"><i class="fa-brands icon fa-instagram"></i></p>
-        <p class="item"><i class="fa-regular icon fa-envelopes-bulk"></i></p>
-    </div>
-
-    <script src="https://kit.fontawesome.com/aa9a9ebdd5.js" crossorigin="anonymous"></script>
+    <script src="flower.js"></script>
+    <script src="https://kit.fontawesome.com/aa9a9ebdd5.js " crossorigin="anonymous "></script>
 </body>
 
 </html>
